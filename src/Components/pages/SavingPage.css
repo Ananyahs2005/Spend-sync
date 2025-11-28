@@ -1,0 +1,144 @@
+/* --- Background and Layout --- */
+.saving-page {
+  background: linear-gradient(to right, #000000, #f1c40f);
+  min-height: 100vh;
+  padding: 40px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* --- Headings --- */
+.saving-page h2 {
+  font-size: 2rem;
+  text-align: center;
+  color: #f1c40f;
+  text-shadow: 0 0 15px rgba(255, 215, 0, 0.7);
+  margin-bottom: 20px;
+}
+
+/* --- Balance Box --- */
+.stats-box {
+  background: rgba(0, 0, 0, 0.75);
+  padding: 20px 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+  margin-bottom: 20px;
+}
+
+.stats-box h3 {
+  font-size: 1.4rem;
+  color: #fff;
+  text-align: center;
+}
+
+/* --- Buttons --- */
+.primary-btn {
+  background-color: #f1c40f;
+  color: black;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.7);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.primary-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(255, 215, 0, 1);
+}
+
+/* --- Goal Cards --- */
+.goals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  width: 90%;
+  margin-top: 20px;
+}
+
+.goal-card {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+  color: #fff;
+  transition: transform 0.2s;
+}
+
+.goal-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(255, 215, 0, 0.6);
+}
+
+.goal-card h4 {
+  color: #f1c40f;
+}
+
+.goal-card progress {
+  width: 100%;
+  height: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.goal-card progress::-webkit-progress-bar {
+  background: #333;
+  border-radius: 10px;
+}
+
+.goal-card progress::-webkit-progress-value {
+  background: linear-gradient(90deg, #f1c40f, #ffcc00);
+  border-radius: 10px;
+}
+
+/* --- Withdrawal Form --- */
+.withdrawal-form-page {
+  background: linear-gradient(135deg, #000000, #f1c40f);
+  color: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgba(255, 215, 0, 0.5);
+  width: 70%;
+  margin: 50px auto;
+}
+
+.withdrawal-form-page h2 {
+  color: #f1c40f;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.withdrawal-form-page input,
+.withdrawal-form-page textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+.withdrawal-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.cancel-btn {
+  background: red;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.cancel-btn:hover {
+  background: darkred;
+}

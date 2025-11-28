@@ -1,0 +1,159 @@
+/* --- Overall Emergency Page Layout --- */
+.emergency-page {
+  background: linear-gradient(to right, #000000, #f1c40f);
+  min-height: 100vh;
+  padding: 40px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* --- Page Heading --- */
+.emergency-page h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #f1c40f;
+  margin-bottom: 10px;
+  text-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
+}
+
+/* --- Description --- */
+.emergency-page p {
+  font-size: 1rem;
+  margin-bottom: 25px;
+}
+
+/* --- Stats Section --- */
+.stats-box {
+  background: rgba(0, 0, 0, 0.75);
+  padding: 25px 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgba(255, 215, 0, 0.5);
+  width: 60%;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.stats-box:hover {
+  transform: scale(1.02);
+}
+
+.stats-box h3 {
+  color: #fff;
+  margin: 8px 0;
+}
+
+.stats-box span {
+  color: #f1c40f;
+  font-weight: bold;
+}
+
+/* --- Progress Bar --- */
+progress {
+  width: 60%;
+  height: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 15px;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #444;
+  border-radius: 10px;
+}
+
+progress::-webkit-progress-value {
+  background-color: #f1c40f;
+  border-radius: 10px;
+}
+
+/* --- Deposit / Withdraw Section --- */
+form {
+  background: rgba(0, 0, 0, 0.75);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
+}
+
+form h4 {
+  color: #f1c40f;
+  margin-bottom: 10px;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+form input:focus {
+  box-shadow: 0 0 8px rgba(255, 215, 0, 0.8);
+}
+
+/* --- Buttons --- */
+.primary-btn {
+  background-color: #f1c40f;
+  color: black;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.7);
+}
+
+.primary-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(255, 215, 0, 1);
+}
+
+.cancel-btn {
+  background-color: #b30000;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
+}
+
+.cancel-btn:hover {
+  background-color: #ff1a1a;
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(255, 0, 0, 1);
+}
+
+/* --- Layout for Deposit & Withdrawal Forms --- */
+.emergency-page > div:last-of-type {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  width: 80%;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+  .stats-box {
+    width: 90%;
+  }
+
+  progress {
+    width: 90%;
+  }
+
+  .emergency-page > div:last-of-type {
+    flex-direction: column;
+    width: 100%;
+  }
+}
